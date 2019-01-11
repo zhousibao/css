@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>垂直居中</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+
+        .con{
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+            color: #fff;
+        }
+        .con1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+        .con2{
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+        }
+        .con3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+
+
+
+        .con4{
+            margin: 50vh auto 0;
+            transform: translateY(-50%);
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!--<div class="con con1">
+        绝对定位，使用margin调整
+    </div>-->
+    <!--<div class="con con2">
+        绝对定位，使用calc()方法直接定位
+    </div>-->
+    <!--<div class="con con3">
+        绝对定位，使用translate调整
+    </div>-->
+
+
+
+    <div class="con con4">
+        基于视口单位vh
+    </div>
+
+
+
+</body>
+<script>
+    /***
+     * 水平居中
+     * 如果它是一个行内元素， 就对它的父元素应用text-align: center;
+     * 如果它是一个块级元素，就对 它自身应用margin: auto。
+     *
+     */
+
+    /***
+     * 垂直居中
+     * 基于绝对定位的解决方案。
+     * 基于视口单位的解决方案。
+     * 基于Flexbox的解决方案。
+     */
+</script>
+</html>

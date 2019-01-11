@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>通过阴影来弱化背景</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+
+        dialog::backdrop {
+            background: rgba(0,0,0,.8)
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <button onclick="document.querySelector('#modal').showModal()">Click me</button>
+    <dialog id="modal">
+        O HAI!
+        <button onclick="this.parentNode.close()">Close</button>
+    </dialog>
+
+
+
+
+
+</body>
+<script>
+    /***
+     * 弱化背景
+     * 1、通过添加遮罩层
+     * 2、通过box-shadow (缺点太多)
+     * 3、通过<dialog>的backdrop伪类。
+     *
+     *
+     */
+</script>
+</html>

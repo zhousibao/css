@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>毛玻璃效果</title>
+    <style>
+        body{
+            margin: 0;
+            min-height: 100vh;
+            background: url("http://csssecrets.io/images/tiger.jpg") 0 / cover fixed;
+            font: 150%/1.6 Baskerville, Palatino, serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main{
+            margin: 30px 180px;
+            background: hsla(0,0%,100%,.3);
+            border-radius: .3em;
+            box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .main::before { content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background: url("http://csssecrets.io/images/tiger.jpg") 0 / cover fixed;
+            filter: blur(20px);
+            margin: -30px;
+        }
+        .con {
+            font-style: italic;
+            padding: 20px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+        <div class="main">
+            <div class="con">
+                "the only way to get rid of a temptation the only way to get rid of
+                a temptation the only way to get rid of a temptation
+                a temptation the only way to get rid of a temptation
+                nly way to get rid of a temptation the only way to get rid of
+                a temptation the only way to get rid of a tem"
+                <footer>
+                    Oscar wilde,The picture of Dorian Gray
+                </footer>
+            </div>
+        </div>
+</body>
+<script>
+    /***
+     *
+     * 掌握css3伪类(重要)
+     * 掌握css3过滤filter
+     *
+     * 注意：background: url("http://csssecrets.io/images/tiger.jpg") 0 / cover fixed;
+     * css3简写顺序如下：background：color img_url repeat attachment position / size;
+     *
+     */
+</script>
+</html>

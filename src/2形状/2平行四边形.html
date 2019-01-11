@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>平行四边形</title>
+    <style>
+        .con{
+            width:200px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin: 100px;
+            background: #fb3;
+            transform: skewX(-45deg);
+        }
+
+        .con > div{
+            transform: skewX(45deg);
+        }
+
+        .wei{
+            width:200px;
+            padding: 20px 0;
+            margin: 100px;
+            text-align: center;
+
+            position: relative;
+            color: white;
+        }
+        .wei::before {
+            content: ''; /* 用伪元素来生成一个矩形 */
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0; z-index: -1;
+            background: #58a;
+            transform: skew(-45deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>平行四边形:</p>
+    <div class="con">内容也变形</div>
+
+    <p>方法一:嵌套元素</p>
+    <div class="con">
+        <div>内容做反向变形</div>
+    </div>
+
+    <p>方法二:伪元素</p>
+    <div class="wei">
+        <div>伪元素</div>
+    </div>
+
+
+</body>
+<script>
+    /***
+     * 理解CSS变形属性:transform
+     *
+     *
+     */
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>调整tab的宽度</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+
+        .size4{
+            tab-size:4;
+        }
+        .size12{
+            tab-size:12;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <code>一段电脑代码</code>
+
+
+    <pre class="size4">   浏览器兼容性不好</pre>
+    <pre>   浏览器兼容性不好</pre>
+    <pre class="size12">   浏览器兼容性不好</pre>
+</body>
+<script>
+    /***
+     *
+     * 我们通常使用 <pre> 和 <code> 元素来显示代码，它们具有浏览器所赋予的默认样式。
+     * pre, code {
+        font-family: monospace;
+        }
+     * pre {
+        display: block;
+        margin: 1em 0;
+        white-space: pre; }
+     *
+     *
+     *
+     *
+     * tab-size 属性规定制表符（tab）字符的空格长度。
+     * tab-size = 8 (默认值)
+     *
+     *
+     */
+</script>
+</html>

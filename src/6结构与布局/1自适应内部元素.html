@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>自适应内部元素</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+        figure {
+            max-width: 300px;/*为了给那些旧版浏览器提供一个平稳的回退样式，
+                                我们需要在使用min-content的同时，提供一个固定的max-width值*/
+            max-width: min-content;
+            margin: auto;
+        }
+        figure > img {
+            max-width: inherit;
+            /*如果fgure的尺寸是由内部其他因素决定时，这个规则就会生效*/
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <p>Some text [...]</p>
+    <figure>
+        <img src="http://csssecrets.io/images/adamcatlace.jpg" /> <figcaption>
+        The great Sir Adam Catlace was named after
+        Countess Ada Lovelace, the first programmer.
+    </figcaption>
+    </figure>
+    <p>More text [...].</p>
+
+
+
+</body>
+<script>
+    /***
+     *
+     * width: min-content;
+     * min-content关键字将解析为这个容器内部最大的不可断行元素的宽度(即最宽的单词、图片或具有固定宽度的盒元素)。
+     *
+     *
+     *
+     */
+</script>
+</html>

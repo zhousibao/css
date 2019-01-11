@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>自适应椭圆</title>
+    <style>
+        .con{
+            width:350px;
+            height: 200px;
+            margin: 20px;
+            background: #fb3;
+            border-radius: 50% / 50%;
+        }
+
+        .ban{
+            width:150px;
+            height: 100px;
+            margin: 20px;
+            background: #fb3;
+        }
+        .ban1{
+            border-radius: 50% / 100% 100% 0% 0%;
+        }
+        .ban2{
+            border-radius: 50%/ 0% 0% 100% 100%;
+        }
+        .ban3{
+            border-radius: 100% 0% 0% 100% / 50%;
+        }
+        .ban4{
+            border-radius: 0% 100% 100% 0% / 50%;
+        }
+
+
+        .si{
+            width:150px;
+            height: 100px;
+            margin: 20px;
+            background: #fb3;
+        }
+        .si1{
+            border-radius: 100% 0% 0% 0%;
+        }
+        .si2{
+            border-radius: 0% 100% 0% 0%;
+        }
+        .si3{
+            border-radius: 0% 0% 0% 100%;
+        }
+        .si4{
+            border-radius: 0% 0% 100% 0%;
+        }
+    </style>
+</head>
+<body>
+    <p>自适应椭圆:</p>
+    <div class="con">
+    </div>
+
+    <p>半椭圆:</p>
+    <div class="ban ban1"></div>
+    <div class="ban ban2"></div>
+    <div class="ban ban3"></div>
+    <div class="ban ban4"></div>
+
+    <p>四分之一椭圆:</p>
+    <div class="si si1"></div>
+    <div class="si si2"></div>
+    <div class="si si3"></div>
+    <div class="si si4"></div>
+</body>
+<script>
+    /***
+     * border-radius有一个鲜为人知的真相:它可以单独指定水平和垂直半径，只要用一个斜杠(/)分隔这两个值即可。
+     * border-radius: 50% / 50% = border-radius: 50%;
+     *
+     *
+     */
+</script>
+</html>

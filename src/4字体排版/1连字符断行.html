@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>连字符断行</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .main {
+            margin: 30px;
+            width: 140px;
+            height: 150px;
+            border: 1px solid #ccc;
+            text-align: justify;
+        }
+        .main1 {
+            margin: 30px;
+            width: 140px;
+            height: 150px;
+            border: 1px solid #ccc;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        The only way to get rid of a temptation is to yield to it.
+    </div>
+    <div class="main1">
+        The only way to get rid of a temptation is to yield to it.
+    </div>
+</body>
+<script>
+    /***
+     *
+     * text-align: justify;两端对齐，容易损伤了可读性，经常与hyphens属性一起使用。
+     * hyphens告知浏览器在换行时如何使用连字符连接单词。
+     * hyphens：manual（默认值，保持默认行为）／none（禁用连字符行为）／auto（浏览器自动添加连字符）。
+     *
+     *
+     * 连字符：&shy
+     */
+</script>
+</html>

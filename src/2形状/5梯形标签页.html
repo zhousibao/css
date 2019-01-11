@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>梯形标签页</title>
+    <style>
+        .con{
+            margin: 50px;
+            position: relative;
+            width: 100px;
+            text-align: center;
+            padding:1em;
+            color: white;
+        }
+        .con::before {
+            content: ''; /* 用伪元素来生成一个矩形 */
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0; z-index: -1;
+            background: #58a;
+            transform: scaleY(1.6) perspective(.5em) rotateX(5deg);
+            transform-origin: bottom;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        梯形标签页
+    </div>
+
+
+
+
+
+
+</body>
+<script>
+    /***
+     *
+     *
+     *
+     */
+</script>
+</html>

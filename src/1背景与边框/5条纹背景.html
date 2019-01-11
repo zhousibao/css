@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>条纹背景</title>
+    <style>
+        .con{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+
+            background: linear-gradient(#fb3, #58a);
+            background: linear-gradient(#fb3 20%, #58a 80%);
+            background: linear-gradient(#fb3 30%, #58a 30%);
+            background: linear-gradient(#fb3 30%, #58a 0);
+            background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+            background: linear-gradient(to right, #fb3 50%, #58a 0);
+            background: linear-gradient(45deg, #fb3 50%, #58a 0);
+            background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+
+            background-size: 100% 45px;
+            background-size: 30px 100%;
+            background-size: 30px 30px;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+
+    </div>
+</body>
+<script>
+    /***
+     * 背景渐变linear-gradient()与background-size的灵活运用。
+     *
+     * background: linear-gradient(direction, color-stop1, color-stop2, ...);
+     * direction:to bottom(默认)/to top/to right/to left/to bottom right/deg(角度)
+     */
+</script>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>简单的饼图</title>
+    <style>
+        .con{
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: yellowgreen;
+            background-image:
+                    linear-gradient(to right, transparent 50%, #655 0);
+
+        }
+        .con1::before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: inherit;
+            transform-origin: left;
+            transform: rotate(.3turn);
+        }
+
+        .con2::before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: inherit;
+            transform-origin: left;
+            animation: spin 3s linear infinite,
+            bg 6s step-end infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(.5turn); }
+        }
+        @keyframes bg {
+            50% { background: #655; }
+        }
+
+
+
+        .pie {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: yellowgreen;
+            background-image: linear-gradient(to right, transparent 50%, #655 0);
+            color: transparent; /*隐藏文字*/
+        }
+        .pie::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: inherit;
+            transform-origin: left;
+            animation: spin 50s linear infinite, bg 100s step-end infinite;
+            animation-play-state: paused;
+            animation-delay: inherit;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <p>0-50%的饼图效果</p>
+    <div class="con con1"></div>
+
+    <p>饼图动画效果</p>
+    <div class="con con2"></div>
+
+    <p>0-100%的饼图效果</p>
+    <div class="pie" style="animation-delay: -20s">0</div>
+    <div class="pie" style="animation-delay: -40s">0</div>
+    <div class="pie" style="animation-delay: -60s">0</div>
+    <div class="pie" style="animation-delay: -80s">0</div>
+
+
+
+
+
+</body>
+<script>
+    /***
+     * turn :一圈／一转
+     * 1turn = 360deg
+     *
+     */
+</script>
+</html>

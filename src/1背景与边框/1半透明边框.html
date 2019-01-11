@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>变透明边框</title>
+    <style>
+        body{
+            background: url('http://csssecrets.io/images/stone-art.jpg');
+        }
+        .con{
+            width: 200px;
+            height: 200px;
+            background: white;
+            background-clip: padding-box;
+
+
+            border: 10px solid rgba(255,0,0,0.5);
+            /* border:10px solid hsla(0,0%,100%,.5);*/
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+    </div>
+</body>
+<script>
+    /***
+     * 深入理解背景色的覆盖范围
+     * 背景色的覆盖范围有background-clip控制
+     * 默认为border-box
+     * background-clip:border-box/padding-box/content-box
+     */
+</script>
+</html>

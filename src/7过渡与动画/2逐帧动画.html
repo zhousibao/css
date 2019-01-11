@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>逐帧动画</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+
+
+        .loading{
+            margin: 50px;
+            width: 100px;
+            height: 100px;
+            background: url(http://dabblet.com/img/loader.png) 0 0;
+            animation: loader 1s infinite steps(8);
+        }
+
+
+        @keyframes loader{
+            to {
+                background-position: -800px 0;
+            }
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="loading"></div>
+
+
+
+
+</body>
+<script>
+    /***
+     *
+     * GIF图片的缺点：
+     * GIF 图片的所能使用的颜色数量被限制在 256 色。
+     * GIF 不具备 Alpha 透明的特性。
+     * 无法在 CSS 层面修改动画的某些参数，比如动画的持续时间、 循环次数、是否暂停等
+     *
+     *
+     * steps()会根据你指定的步进数量,把整个动画切分为多帧。
+     *
+     *
+     *
+     * animation-iteration-count属性定义动画应该播放多少次。
+     * 默认值1。
+     * infinite:动画应该播放无限次。
+     */
+
+</script>
+</html>

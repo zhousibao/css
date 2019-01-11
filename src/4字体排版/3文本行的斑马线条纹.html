@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>文本行的斑马线条纹</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+        .con{
+            margin: 0;
+            line-height: 2;
+            background: beige;
+            background-image: linear-gradient(to bottom,rgba(0,0,0,.2) 50%, transparent 0);
+            background-size: auto 4em;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <pre class="con">
+        while (true) {
+            var d = new Date();
+            if(d.getDate()==1 && d.getMonth()==3) {
+                alert("TROLOLOL");
+            }
+        }
+    </pre>
+</body>
+<script>
+    /***
+     *
+     * 一般浏览器默认的font-size:16px;
+     * line-height的默认值为normal，默认line-height值是font-size的1.3倍。
+     *
+     * 利用line-height = 2;即line-height = 2em; 把渐变大小设置为2倍的line-height.
+     *
+     *
+     *
+     */
+</script>
+</html>

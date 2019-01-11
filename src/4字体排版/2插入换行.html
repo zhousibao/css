@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>插入换行</title>
+    <style>
+        body{
+            margin: 0;
+            font: 150%/1.6 Baskerville, Palatino, serif;
+        }
+        dt,dd{
+            display: inline;
+            margin: 0;
+        }
+        dd {
+            font-weight: bold;
+        }
+        dd + dt::before {
+            content: "\A";
+            white-space: pre;
+        }
+        dd + dd::before {
+            content: ', ';
+            font-weight: normal;
+            margin-left: -.25em;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Name:</dt>
+        <dd>Lea Verou</dd>
+
+        <dt>Email:</dt>
+        <dd>lea@verou.me</dd>
+        <dd>leaverou@mit.edu</dd>
+
+        <dt>Location:</dt>
+        <dd>Earth</dd>
+    </dl>
+</body>
+<script>
+    /***
+     *
+     * 熟练使用css伪类。
+     *
+     * white-space属性指定元素内的空白怎样处理。
+     * normal	默认。空白会被浏览器忽略。
+     * pre	空白会被浏览器保留。其行为方式类似 HTML 中的 <pre> 标签。
+     * nowrap	文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。
+     * pre-wrap	保留空白符序列，但是正常地进行换行。
+     * pre-line	合并空白符序列，但是保留换行符。
+     *
+     *
+     * 连字符：&shy
+     */
+</script>
+</html>

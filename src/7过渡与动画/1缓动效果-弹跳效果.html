@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>缓动效果-弹跳效果</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+        .con{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 50px;
+            background: yellowgreen;
+        }
+
+
+        @keyframes bounce{
+            60%,80%,to{
+                transform: translateY(350px);
+            }
+            70%{
+                transform: translateY(250px);
+            }
+            90%{
+                transform: translateY(300px);
+            }
+        }
+        .ball{
+            animation: bounce 3s;
+        }
+
+        @keyframes bounce1{
+            60%,80%,to{
+                transform: translateY(350px);
+                animation-timing-function: ease-out;
+            }
+            70%{
+                transform: translateY(250px);
+            }
+            90%{
+                transform: translateY(300px);
+            }
+        }
+        .ball1{
+            animation: bounce1 3s ease-in;
+        }
+
+        @keyframes bounce2{
+            60%,80%,to{
+                transform: translateY(350px);
+                animation-timing-function: ease;
+            }
+            70%{
+                transform: translateY(250px);
+            }
+            90%{
+                transform: translateY(300px);
+            }
+        }
+        .ball2{
+            animation: bounce2 3s cubic-bezier(.1,.25,1,.25);
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="con ball">
+
+</div>
+
+<div class="con ball1">
+
+</div>
+
+<div class="con ball2">
+
+</div>
+
+
+
+
+</body>
+<script>
+    /***
+     *
+     * 过渡函数
+     * transition-timing-function:过渡效果速度
+     * animation-timing-function:动画过渡效果速度
+     *
+     * cubic-bezier(n,n,n,n):三次贝塞尔曲线。
+     *
+     * 值：
+     * ease(默认):慢速开始，然后变快，然后慢速结束。cubic-bezier(0.25,0.1,0.25,1)
+     * ease-in:慢速开始的过渡效果。cubic-bezier(0.42,0,1,1)
+     * ease-out:慢速结束的过渡效果。cubic-bezier(0,0,0.58,1)
+     * ease-in-out:规定以慢速开始和结束的过渡效果。cubic-bezier(0.42,0,0.58,1)
+     * linear:相同速度开始至结束的过渡效果。cubic-bezier(0,0,1,1)
+     *
+     * 这五种速度曲线都是通过三次贝塞尔曲线来指定的。
+     * cubic-bezier.com 的图形化工具可以反复尝试和优化。
+     *
+     *
+     *
+     */
+
+</script>
+</html>

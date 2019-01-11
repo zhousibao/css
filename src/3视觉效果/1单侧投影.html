@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>单侧投影</title>
+    <style>
+        .con{
+            display: inline-block;
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+            background: yellowgreen;
+        }
+        .top{
+            box-shadow: 0px -4px 0px 0px rgba(0,0,0,.5);
+        }
+        .right{
+            box-shadow: 4px 0px 0px 0px rgba(0,0,0,.5);
+        }
+        .bottom{
+            box-shadow: 0px 4px 0px 0px rgba(0,0,0,.5);
+        }
+        .left{
+            box-shadow: -4px 0px 0px 0px rgba(0,0,0,.5);
+        }
+
+        .top1{
+            box-shadow: 0px -8px 4px -4px rgba(0,0,0,.5);
+        }
+        .right1{
+            box-shadow: 8px 0px 4px -4px rgba(0,0,0,.5);
+        }
+        .bottom1{
+            box-shadow: 0px 8px 4px -4px rgba(0,0,0,.5);
+        }
+        .left1{
+            box-shadow: -8px 0px 4px -4px rgba(0,0,0,.5);
+        }
+
+        .horizontal{
+            box-shadow: 8px 0px 4px -4px rgba(0,0,0,.5),
+                        -8px 0px 4px -4px rgba(0,0,0,.5)
+
+        }
+        .vertical{
+            box-shadow: 0px -8px 4px -4px rgba(0,0,0,.5),
+                        0px 8px 4px -4px rgba(0,0,0,.5);
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <p>单侧阴影（阴影为纯色，没有模糊度）</p>
+    <div class="con top"></div>
+    <div class="con right"></div>
+    <div class="con bottom"></div>
+    <div class="con left"></div>
+
+    <p>单侧阴影（阴影有模糊度）</p>
+    <div class="con top1"></div>
+    <div class="con right1"></div>
+    <div class="con bottom1"></div>
+    <div class="con left1"></div>
+
+    <p>对侧阴影（阴影有模糊度）</p>
+    <div class="con horizontal"></div>
+    <div class="con vertical"></div>
+
+
+</body>
+<script>
+    /***
+     *
+     */
+</script>
+</html>

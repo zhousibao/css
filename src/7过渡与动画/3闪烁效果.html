@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>闪烁效果</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+
+
+        .blink{
+            margin: 50px;
+            height: 100px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 100px;
+            background: yellowgreen;
+        }
+
+
+        @keyframes blink-smooth1{
+            to {
+                color: transparent;
+            }
+        }
+        .blink1{
+            animation: 1s blink-smooth1 3;
+        }
+        @keyframes blink-smooth2{
+            50% {
+                color: transparent;
+            }
+        }
+        .blink2{
+            animation: 1s blink-smooth2 3;
+        }
+        .blink3{
+            animation: 0.5s blink-smooth1 6 alternate;
+        }
+        .blink4{
+            animation: 1s blink-smooth2 3 steps(1);
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="blink blink1">生硬地闪烁</div>
+    <div class="blink blink2">平滑加速的闪烁动画</div>
+    <div class="blink blink3">一个平滑的闪烁动画</div>
+    <div class="blink blink4">普通的闪烁效果</div>
+
+
+
+
+</body>
+<script>
+    /***
+     *
+     * animation-direction 属性定义是否循环交替反向播放动画。
+     * normal(默认):动画按正常播放。
+     * reverse:动画反向播放。
+     * alternate:动画在奇数次（1、3、5...）正向播放，在偶数次（2、4、6...）反向播放。
+     * alternate-reverse:动画在奇数次（1、3、5...）反向播放，在偶数次（2、4、6...）正向播放。
+     *
+     *
+     */
+
+</script>
+</html>

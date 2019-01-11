@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>连续的图像边框</title>
+    <style>
+        .con{
+            padding: 1em;
+            border: 1em solid transparent;
+            background:
+                    linear-gradient(white, white),
+                    url(http://csssecrets.io/images/stone-art.jpg);
+            background-size: cover;
+            background-clip: padding-box, border-box;
+            background-origin: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        I have a nice stone art border, don't I look pretty?
+    </div>
+</body>
+<script>
+    /***
+     * background同时设置多个背景，前面的会覆盖后面的。
+     *
+     */
+</script>
+</html>

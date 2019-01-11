@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>交互式的图片对比控件</title>
+    <style>
+        body{
+            margin: 0;
+            font: 100%/1.5 Baskerville, Palatino, serif;
+        }
+
+        .image-slider{
+            position: relative;
+            display: inline-block;
+        }
+        .image-slider > div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            overflow: hidden;
+            max-width: 100%;
+            resize: horizontal;
+        }
+        .image-slider img{
+            display: block;
+            user-select: none;
+        }
+
+        .image-slider > div::before{
+            content:'';
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            background:
+                    linear-gradient(-45deg, white 50%, transparent 0);
+            background-clip: content-box;
+            cursor: ew-resize;
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="image-slider">
+        <div>
+            <img src="http://csssecrets.io/images/adamcatlace-before.jpg" alt="Before">
+        </div>
+        <img src="http://csssecrets.io/images/adamcatlace.jpg" alt="After">
+    </div>
+
+
+
+</body>
+<script>
+    /***
+     *
+     * 低调的 resize
+     * <textarea> 元素的resize属性被默认设置为 both。
+     * resize属性实际上适用于任何元素，只要它的 overflow 属性不是 visible。
+     *
+     *
+     * resize:none(默认)/horizontal/vertical。
+     *
+     */
+</script>
+</html>

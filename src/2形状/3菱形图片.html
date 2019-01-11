@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>菱形图片</title>
+    <style>
+        .picture{
+            margin: 50px;
+            width:200px;
+            transform: rotate(45deg);
+            overflow: hidden;
+
+        }
+        .picture > img {
+            max-width: 100%;
+            transform: rotate(-45deg) scale(1.44);
+        }
+
+
+
+
+
+
+        .img{
+            clip-path: polygon(50% 0, 100% 50%,
+            50% 100%, 0 50%); transition: 1s clip-path;
+        }
+        .img:hover {
+            clip-path: polygon(0 0, 100% 0,100% 100%, 0 100%);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <p>菱形图片:(基于变形方案，只适用于正方形图片)</p>
+    <div class="picture">
+        <img src="http://csssecrets.io/images/adamcatlace.jpg">
+    </div>
+
+
+
+    <p>菱形图片:(裁切路径方案)</p>
+    <img class="img" src="http://csssecrets.io/images/adamcatlace.jpg">
+    <img class="img" src="http://csssecrets.io/images/adam-sleeping.jpg" width="600" height="715">
+
+
+
+
+
+</body>
+<script>
+    /***
+     * 理解CSS变形属性:transform
+     *
+     *
+     */
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>灵活的背景定位</title>
+    <style>
+        .con{
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            border: 10px dashed #f00;
+            margin: 10px;
+            padding: 10px;
+
+
+            background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+            background-origin: border-box;
+            /*background-position: right 20px bottom 10px;*/
+
+            background-position: calc(100% - 20px) calc(100% - 10px);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+    </div>
+</body>
+<script>
+    /***
+     * background-image的优先级大于background-color;
+     *
+     * 深入理解背景图片的覆盖范围
+     * 背景图的覆盖围有background-origin控制
+     * 默认为padding-box
+     * background-clip:padding-box/border-box/content-box
+     *
+     * background-position控制背景定位
+     * calc()方法可以用于计算尺寸
+     *
+     * background-attachment:设置背景图像是否固定或者随着页面的其余部分滚动。
+     * background-attachment:scroll(默认值)/fixed
+     *
+     */
+</script>
+</html>

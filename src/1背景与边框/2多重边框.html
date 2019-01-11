@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>多重边框</title>
+    <style>
+        .con{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background: yellowgreen;
+
+            /*box-shadow: 0 0 0 10px #655, 0 0 0 15px #f90;*/
+
+            border: 10px solid #655;
+            outline: 5px dashed deeppink;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+    </div>
+</body>
+<script>
+    /***
+     * 方法一:box-shadow
+     * 唯一需要注意的是，box-shadow 是层层叠加的，第一层投影位于最顶层，依次类推。
+     * box-shadow不影响布局空间。
+     * box-shadow: h-shadow v-shadow blur spread color inset;
+     * blur:模糊度
+     * spread:阴影大小
+     * inset:从外层的阴影（开始时）改变阴影内侧阴影
+     */
+
+
+    /***
+     * 方法二:outline
+     * 可以产生虚线边框效果，但只能产生两层边框。
+     * outline不影响布局空间。
+     * outline不受border-radius影响。
+     */
+</script>
+</html>
