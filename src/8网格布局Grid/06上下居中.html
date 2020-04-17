@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>网格布局 + place-items</p>
+  <div class="wai">
+    <div class="nei"></div>
+  </div>
+
+  <p>网格布局 + place-self</p>
+  <div class="wai-0">
+    <div class="nei-0"></div>
+  </div>
+
+  <p>flex布局</p>
+  <div class="wai1">
+    <div class="nei1"></div>
+  </div>
+
+  <p>flex布局 + margin:auto;</p>
+  <div class="wai1-1">
+    <div class="nei1-1"></div>
+  </div>
+
+  <p>绝对定位absolute</p>
+  <div class="wai2">
+    <div class="nei2"></div>
+  </div>
+
+  <p>绝对定位absolute + transform</p>
+  <div class="wai3">
+    <div class="nei3"></div>
+  </div>
+
+  <p>绝对定位absolute + margin: auto;</p>
+  <div class="wai4">
+    <div class="nei4"></div>
+  </div>
+
+  <p>text-align: center + line-height + inline-block + vertical-align: middle</p>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+  
+</body>
+<style>
+  .wai{
+    display: grid;
+    width: 200px;
+    height: 200px;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
+    background: #ccc;
+  }
+  .nei{
+    width: 100px;
+    height: 100px;
+    background: #f96331;
+  }
+
+  .wai-0{
+    display: grid;
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+  }
+  .nei-0{
+    width: 100px;
+    height: 100px;
+    background: #f96331;
+    /* justify-self: center;
+    align-self: center; */
+    place-self: center;
+  }
+
+
+  .wai1{
+    display: flex;
+    width: 200px;
+    height: 200px;  
+    justify-content: center; 
+    align-items: center;
+    background: #ccc;
+  }
+  .nei1{
+    width: 100px;
+    height: 100px;
+    background: #f96331;
+  }
+
+  .wai1-1{
+    display: flex;
+    width: 200px;
+    height: 200px;  
+    background: #ccc;
+  }
+  .nei1-1{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: #f96331;
+  }
+
+  .wai2{
+    position: relative;
+    width: 200px;
+    height: 200px;  
+    background: #ccc;
+  }
+  .nei2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    background: #f96331;
+  }
+
+  .wai3{
+    position: relative;
+    width: 200px;
+    height: 200px;  
+    background: #ccc;
+    line-height: 200px;
+  }
+  .nei3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    /* transform: translateX(-50px) translateY(-50px); */
+    background: #f96331;
+  }
+
+  .wai4{
+    position: relative;
+    width: 200px;
+    height: 200px;  
+    background: #ccc;
+  }
+  .nei4{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: #f96331;
+  }
+
+
+  .parent {
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+    text-align: center;
+    line-height: 200px;
+  }
+  .child{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    background: #f96331;
+  }
+</style>
+</html>
